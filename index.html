@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="particle-container" id="particleContainer"></div>
+    
+    <div class="welcome-container" id="welcomeContainer">
+        <h1 class="welcome-title">Welcome To Vishesh Khandal Calculator</h1>
+        <button id="startButton" class="control-btn start-btn">Start Calculator</button>
+    </div>
+    
+    <div class="calculator-container" id="calculatorContainer" style="display: none;">
+        <div class="theme-toggle">
+            <button id="themeToggle" class="theme-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        
+        <div class="calculator" id="calculator">
+            <div class="display">
+                <div class="history" id="history"></div>
+                <div class="current-input" id="currentInput">0</div>
+            </div>
+            
+            <div class="memory-buttons">
+                <button class="memory-btn" id="mc">MC</button>
+                <button class="memory-btn" id="mr">MR</button>
+                <button class="memory-btn" id="mPlus">M+</button>
+                <button class="memory-btn" id="mMinus">M-</button>
+            </div>
+
+            <div class="buttons">
+                <button class="btn scientific" data-action="sin">sin</button>
+                <button class="btn scientific" data-action="cos">cos</button>
+                <button class="btn scientific" data-action="tan">tan</button>
+                <button class="btn scientific" data-action="log">log</button>
+                <button class="btn scientific" data-action="ln">ln</button>
+                <button class="btn scientific" data-action="sqrt">√</button>
+                <button class="btn scientific" data-action="pow">x^y</button>
+                <button class="btn scientific" data-action="fact">x!</button>
+                <button class="end-btn" id="endButton">End</button>
+                
+                <button class="btn" data-action="clear">C</button>
+                <button class="btn" data-action="backspace">⌫</button>
+                <button class="btn" data-action="percentage">%</button>
+                <button class="btn" data-action="divide">÷</button>
+                
+                <button class="btn" data-action="7">7</button>
+                <button class="btn" data-action="8">8</button>
+                <button class="btn" data-action="9">9</button>
+                <button class="btn" data-action="multiply">×</button>
+                
+                <button class="btn" data-action="4">4</button>
+                <button class="btn" data-action="5">5</button>
+                <button class="btn" data-action="6">6</button>
+                <button class="btn" data-action="subtract">-</button>
+                
+                <button class="btn" data-action="1">1</button>
+                <button class="btn" data-action="2">2</button>
+                <button class="btn" data-action="3">3</button>
+                <button class="btn" data-action="add">+</button>
+                
+                <button class="btn" data-action="negate">±</button>
+                <button class="btn" data-action="0">0</button>
+                <button class="btn" data-action="decimal">.</button>
+                <button class="btn" data-action="equals">=</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="goodbyeMessage" class="goodbye-message" style="display: none;">
+        <h2>Nice to Meet You</h2>
+        <p>See you Soon Later</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
